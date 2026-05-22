@@ -1,0 +1,3067 @@
+{
+  "results": {
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.6815769522365428,
+      "exact_match_stderr,strict-match": 0.012832225723075404,
+      "exact_match,flexible-extract": 0.6823351023502654,
+      "exact_match_stderr,flexible-extract": 0.01282406662148884
+    },
+    "hendrycks_math": {
+      "exact_match,none": 0.14335360556038226,
+      "exact_match_stderr,none": 0.005916187696007286,
+      "alias": "hendrycks_math"
+    },
+    "hendrycks_math_algebra": {
+      "alias": " - hendrycks_math_algebra",
+      "exact_match,none": 0.174,
+      "exact_match_stderr,none": 0.016971271257516147
+    },
+    "hendrycks_math_counting_and_prob": {
+      "alias": " - hendrycks_math_counting_and_prob",
+      "exact_match,none": 0.14135021097046413,
+      "exact_match_stderr,none": 0.016018641943125148
+    },
+    "hendrycks_math_geometry": {
+      "alias": " - hendrycks_math_geometry",
+      "exact_match,none": 0.1315240083507307,
+      "exact_match_stderr,none": 0.015458504556847524
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "alias": " - hendrycks_math_intermediate_algebra",
+      "exact_match,none": 0.068,
+      "exact_match_stderr,none": 0.011269694406861605
+    },
+    "hendrycks_math_num_theory": {
+      "alias": " - hendrycks_math_num_theory",
+      "exact_match,none": 0.132,
+      "exact_match_stderr,none": 0.015152927850580174
+    },
+    "hendrycks_math_prealgebra": {
+      "alias": " - hendrycks_math_prealgebra",
+      "exact_match,none": 0.232,
+      "exact_match_stderr,none": 0.018896193591952038
+    },
+    "hendrycks_math_precalc": {
+      "alias": " - hendrycks_math_precalc",
+      "exact_match,none": 0.124,
+      "exact_match_stderr,none": 0.014754096608517548
+    },
+    "mmlu": {
+      "acc,none": 0.6593280210301486,
+      "acc_stderr,none": 0.004082895243235467,
+      "alias": "mmlu"
+    },
+    "mmlu_humanities": {
+      "acc,none": 0.6529304029304029,
+      "acc_stderr,none": 0.007905509963816344,
+      "alias": " - humanities"
+    },
+    "mmlu_formal_logic": {
+      "alias": "  - formal_logic",
+      "acc,none": 0.4523809523809524,
+      "acc_stderr,none": 0.044518079590553275
+    },
+    "mmlu_high_school_european_history": {
+      "alias": "  - high_school_european_history",
+      "acc,none": 0.7393939393939394,
+      "acc_stderr,none": 0.034277431758165236
+    },
+    "mmlu_high_school_us_history": {
+      "alias": "  - high_school_us_history",
+      "acc,none": 0.8088235294117647,
+      "acc_stderr,none": 0.027599174300640777
+    },
+    "mmlu_high_school_world_history": {
+      "alias": "  - high_school_world_history",
+      "acc,none": 0.8270042194092827,
+      "acc_stderr,none": 0.024621562866768445
+    },
+    "mmlu_international_law": {
+      "alias": "  - international_law",
+      "acc,none": 0.8347107438016529,
+      "acc_stderr,none": 0.03390780612972776
+    },
+    "mmlu_jurisprudence": {
+      "alias": "  - jurisprudence",
+      "acc,none": 0.7407407407407407,
+      "acc_stderr,none": 0.042365112580946336
+    },
+    "mmlu_logical_fallacies": {
+      "alias": "  - logical_fallacies",
+      "acc,none": 0.7668711656441718,
+      "acc_stderr,none": 0.033220157957767414
+    },
+    "mmlu_moral_disputes": {
+      "alias": "  - moral_disputes",
+      "acc,none": 0.7167630057803468,
+      "acc_stderr,none": 0.024257901705323374
+    },
+    "mmlu_moral_scenarios": {
+      "alias": "  - moral_scenarios",
+      "acc,none": 0.424,
+      "acc_stderr,none": 0.022122993778135404
+    },
+    "mmlu_philosophy": {
+      "alias": "  - philosophy",
+      "acc,none": 0.7170418006430869,
+      "acc_stderr,none": 0.02558306248998483
+    },
+    "mmlu_prehistory": {
+      "alias": "  - prehistory",
+      "acc,none": 0.7098765432098766,
+      "acc_stderr,none": 0.025251173936495015
+    },
+    "mmlu_professional_law": {
+      "alias": "  - professional_law",
+      "acc,none": 0.482,
+      "acc_stderr,none": 0.02236856511738799
+    },
+    "mmlu_world_religions": {
+      "alias": "  - world_religions",
+      "acc,none": 0.8128654970760234,
+      "acc_stderr,none": 0.029913127232368032
+    },
+    "mmlu_other": {
+      "acc,none": 0.6954674220963173,
+      "acc_stderr,none": 0.008363283185599956,
+      "alias": " - other"
+    },
+    "mmlu_business_ethics": {
+      "alias": "  - business_ethics",
+      "acc,none": 0.63,
+      "acc_stderr,none": 0.04852365870939098
+    },
+    "mmlu_clinical_knowledge": {
+      "alias": "  - clinical_knowledge",
+      "acc,none": 0.690566037735849,
+      "acc_stderr,none": 0.028450154794118634
+    },
+    "mmlu_college_medicine": {
+      "alias": "  - college_medicine",
+      "acc,none": 0.630057803468208,
+      "acc_stderr,none": 0.0368122963339432
+    },
+    "mmlu_global_facts": {
+      "alias": "  - global_facts",
+      "acc,none": 0.45,
+      "acc_stderr,none": 0.049999999999999996
+    },
+    "mmlu_human_aging": {
+      "alias": "  - human_aging",
+      "acc,none": 0.6547085201793722,
+      "acc_stderr,none": 0.03191100192835794
+    },
+    "mmlu_management": {
+      "alias": "  - management",
+      "acc,none": 0.8155339805825242,
+      "acc_stderr,none": 0.03840423627288276
+    },
+    "mmlu_marketing": {
+      "alias": "  - marketing",
+      "acc,none": 0.8418803418803419,
+      "acc_stderr,none": 0.023902325549560417
+    },
+    "mmlu_medical_genetics": {
+      "alias": "  - medical_genetics",
+      "acc,none": 0.8,
+      "acc_stderr,none": 0.04020151261036845
+    },
+    "mmlu_miscellaneous": {
+      "alias": "  - miscellaneous",
+      "acc,none": 0.818,
+      "acc_stderr,none": 0.01727277329773045
+    },
+    "mmlu_nutrition": {
+      "alias": "  - nutrition",
+      "acc,none": 0.7549019607843137,
+      "acc_stderr,none": 0.02463004897982477
+    },
+    "mmlu_professional_accounting": {
+      "alias": "  - professional_accounting",
+      "acc,none": 0.4645390070921986,
+      "acc_stderr,none": 0.02975238965742705
+    },
+    "mmlu_professional_medicine": {
+      "alias": "  - professional_medicine",
+      "acc,none": 0.7205882352941176,
+      "acc_stderr,none": 0.02725720260611495
+    },
+    "mmlu_virology": {
+      "alias": "  - virology",
+      "acc,none": 0.5421686746987951,
+      "acc_stderr,none": 0.038786267710023595
+    },
+    "mmlu_social_sciences": {
+      "acc,none": 0.7476027397260274,
+      "acc_stderr,none": 0.00785652471865913,
+      "alias": " - social sciences"
+    },
+    "mmlu_econometrics": {
+      "alias": "  - econometrics",
+      "acc,none": 0.45614035087719296,
+      "acc_stderr,none": 0.046854730419077895
+    },
+    "mmlu_high_school_geography": {
+      "alias": "  - high_school_geography",
+      "acc,none": 0.8333333333333334,
+      "acc_stderr,none": 0.02655220782821529
+    },
+    "mmlu_high_school_government_and_politics": {
+      "alias": "  - high_school_government_and_politics",
+      "acc,none": 0.8911917098445595,
+      "acc_stderr,none": 0.022473253332768763
+    },
+    "mmlu_high_school_macroeconomics": {
+      "alias": "  - high_school_macroeconomics",
+      "acc,none": 0.6461538461538462,
+      "acc_stderr,none": 0.02424378399406216
+    },
+    "mmlu_high_school_microeconomics": {
+      "alias": "  - high_school_microeconomics",
+      "acc,none": 0.7310924369747899,
+      "acc_stderr,none": 0.028801392193631273
+    },
+    "mmlu_high_school_psychology": {
+      "alias": "  - high_school_psychology",
+      "acc,none": 0.826,
+      "acc_stderr,none": 0.016971271257516147
+    },
+    "mmlu_human_sexuality": {
+      "alias": "  - human_sexuality",
+      "acc,none": 0.7251908396946565,
+      "acc_stderr,none": 0.03915345408847835
+    },
+    "mmlu_professional_psychology": {
+      "alias": "  - professional_psychology",
+      "acc,none": 0.69,
+      "acc_stderr,none": 0.020704041021724802
+    },
+    "mmlu_public_relations": {
+      "alias": "  - public_relations",
+      "acc,none": 0.7272727272727273,
+      "acc_stderr,none": 0.04265792110940589
+    },
+    "mmlu_security_studies": {
+      "alias": "  - security_studies",
+      "acc,none": 0.7387755102040816,
+      "acc_stderr,none": 0.028123429335142797
+    },
+    "mmlu_sociology": {
+      "alias": "  - sociology",
+      "acc,none": 0.8407960199004975,
+      "acc_stderr,none": 0.025870646766169136
+    },
+    "mmlu_us_foreign_policy": {
+      "alias": "  - us_foreign_policy",
+      "acc,none": 0.85,
+      "acc_stderr,none": 0.03588702812826369
+    },
+    "mmlu_stem": {
+      "acc,none": 0.5518553758325404,
+      "acc_stderr,none": 0.008483658017490313,
+      "alias": " - stem"
+    },
+    "mmlu_abstract_algebra": {
+      "alias": "  - abstract_algebra",
+      "acc,none": 0.32,
+      "acc_stderr,none": 0.046882617226215034
+    },
+    "mmlu_anatomy": {
+      "alias": "  - anatomy",
+      "acc,none": 0.674074074074074,
+      "acc_stderr,none": 0.040491220417025055
+    },
+    "mmlu_astronomy": {
+      "alias": "  - astronomy",
+      "acc,none": 0.6578947368421053,
+      "acc_stderr,none": 0.03860731599316092
+    },
+    "mmlu_college_biology": {
+      "alias": "  - college_biology",
+      "acc,none": 0.7708333333333334,
+      "acc_stderr,none": 0.035146974678623884
+    },
+    "mmlu_college_chemistry": {
+      "alias": "  - college_chemistry",
+      "acc,none": 0.48,
+      "acc_stderr,none": 0.050211673156867795
+    },
+    "mmlu_college_computer_science": {
+      "alias": "  - college_computer_science",
+      "acc,none": 0.6,
+      "acc_stderr,none": 0.04923659639173309
+    },
+    "mmlu_college_mathematics": {
+      "alias": "  - college_mathematics",
+      "acc,none": 0.31,
+      "acc_stderr,none": 0.04648231987117316
+    },
+    "mmlu_college_physics": {
+      "alias": "  - college_physics",
+      "acc,none": 0.47058823529411764,
+      "acc_stderr,none": 0.049665709039785295
+    },
+    "mmlu_computer_security": {
+      "alias": "  - computer_security",
+      "acc,none": 0.81,
+      "acc_stderr,none": 0.03942772444036625
+    },
+    "mmlu_conceptual_physics": {
+      "alias": "  - conceptual_physics",
+      "acc,none": 0.5914893617021276,
+      "acc_stderr,none": 0.032134180267015755
+    },
+    "mmlu_electrical_engineering": {
+      "alias": "  - electrical_engineering",
+      "acc,none": 0.6344827586206897,
+      "acc_stderr,none": 0.04013124195424385
+    },
+    "mmlu_elementary_mathematics": {
+      "alias": "  - elementary_mathematics",
+      "acc,none": 0.4126984126984127,
+      "acc_stderr,none": 0.025355741263055263
+    },
+    "mmlu_high_school_biology": {
+      "alias": "  - high_school_biology",
+      "acc,none": 0.7806451612903226,
+      "acc_stderr,none": 0.02354079935872331
+    },
+    "mmlu_high_school_chemistry": {
+      "alias": "  - high_school_chemistry",
+      "acc,none": 0.5024630541871922,
+      "acc_stderr,none": 0.03517945038691063
+    },
+    "mmlu_high_school_computer_science": {
+      "alias": "  - high_school_computer_science",
+      "acc,none": 0.71,
+      "acc_stderr,none": 0.045604802157206845
+    },
+    "mmlu_high_school_mathematics": {
+      "alias": "  - high_school_mathematics",
+      "acc,none": 0.3888888888888889,
+      "acc_stderr,none": 0.029723278961476664
+    },
+    "mmlu_high_school_physics": {
+      "alias": "  - high_school_physics",
+      "acc,none": 0.4503311258278146,
+      "acc_stderr,none": 0.04062290018683775
+    },
+    "mmlu_high_school_statistics": {
+      "alias": "  - high_school_statistics",
+      "acc,none": 0.5370370370370371,
+      "acc_stderr,none": 0.03400603625538272
+    },
+    "mmlu_machine_learning": {
+      "alias": "  - machine_learning",
+      "acc,none": 0.41964285714285715,
+      "acc_stderr,none": 0.04684099321077106
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.558,
+      "acc_stderr,none": 0.02223197069632112,
+      "acc_norm,none": 0.696,
+      "acc_norm_stderr,none": 0.020591649571224932
+    }
+  },
+  "configs": {
+    "gsm8k": {
+      "task": "gsm8k",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "gsm8k",
+      "dataset_name": "main",
+      "training_split": "train",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 8,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": false,
+          "regexes_to_ignore": [
+            ",",
+            "\\$",
+            "(?s).*#### ",
+            "\\.$"
+          ]
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Question:",
+          "</s>",
+          "<|im_end|>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "#### (\\-?[0-9\\.\\,]+)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "regex",
+              "group_select": -1,
+              "regex_pattern": "(-?[$0-9.,]{2,})|(-?[0-9]+)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 3.0
+      }
+    },
+    "hendrycks_math_algebra": {
+      "task": "hendrycks_math_algebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "algebra",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "hendrycks_math_counting_and_prob": {
+      "task": "hendrycks_math_counting_and_prob",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "counting_and_probability",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "hendrycks_math_geometry": {
+      "task": "hendrycks_math_geometry",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "geometry",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "task": "hendrycks_math_intermediate_algebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "intermediate_algebra",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "hendrycks_math_num_theory": {
+      "task": "hendrycks_math_num_theory",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "number_theory",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "hendrycks_math_prealgebra": {
+      "task": "hendrycks_math_prealgebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "prealgebra",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "hendrycks_math_precalc": {
+      "task": "hendrycks_math_precalc",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "precalculus",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_abstract_algebra": {
+      "task": "mmlu_abstract_algebra",
+      "task_alias": "abstract_algebra",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "abstract_algebra",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about abstract algebra.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_anatomy": {
+      "task": "mmlu_anatomy",
+      "task_alias": "anatomy",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "anatomy",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about anatomy.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_astronomy": {
+      "task": "mmlu_astronomy",
+      "task_alias": "astronomy",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "astronomy",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about astronomy.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_business_ethics": {
+      "task": "mmlu_business_ethics",
+      "task_alias": "business_ethics",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "business_ethics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about business ethics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_clinical_knowledge": {
+      "task": "mmlu_clinical_knowledge",
+      "task_alias": "clinical_knowledge",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "clinical_knowledge",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about clinical knowledge.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_college_biology": {
+      "task": "mmlu_college_biology",
+      "task_alias": "college_biology",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "college_biology",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about college biology.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_college_chemistry": {
+      "task": "mmlu_college_chemistry",
+      "task_alias": "college_chemistry",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "college_chemistry",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about college chemistry.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_college_computer_science": {
+      "task": "mmlu_college_computer_science",
+      "task_alias": "college_computer_science",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "college_computer_science",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about college computer science.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_college_mathematics": {
+      "task": "mmlu_college_mathematics",
+      "task_alias": "college_mathematics",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "college_mathematics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about college mathematics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_college_medicine": {
+      "task": "mmlu_college_medicine",
+      "task_alias": "college_medicine",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "college_medicine",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about college medicine.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_college_physics": {
+      "task": "mmlu_college_physics",
+      "task_alias": "college_physics",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "college_physics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about college physics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_computer_security": {
+      "task": "mmlu_computer_security",
+      "task_alias": "computer_security",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "computer_security",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about computer security.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_conceptual_physics": {
+      "task": "mmlu_conceptual_physics",
+      "task_alias": "conceptual_physics",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "conceptual_physics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about conceptual physics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_econometrics": {
+      "task": "mmlu_econometrics",
+      "task_alias": "econometrics",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "econometrics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about econometrics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_electrical_engineering": {
+      "task": "mmlu_electrical_engineering",
+      "task_alias": "electrical_engineering",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "electrical_engineering",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about electrical engineering.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_elementary_mathematics": {
+      "task": "mmlu_elementary_mathematics",
+      "task_alias": "elementary_mathematics",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "elementary_mathematics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about elementary mathematics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_formal_logic": {
+      "task": "mmlu_formal_logic",
+      "task_alias": "formal_logic",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "formal_logic",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about formal logic.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_global_facts": {
+      "task": "mmlu_global_facts",
+      "task_alias": "global_facts",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "global_facts",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about global facts.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_biology": {
+      "task": "mmlu_high_school_biology",
+      "task_alias": "high_school_biology",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_biology",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school biology.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_chemistry": {
+      "task": "mmlu_high_school_chemistry",
+      "task_alias": "high_school_chemistry",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_chemistry",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school chemistry.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_computer_science": {
+      "task": "mmlu_high_school_computer_science",
+      "task_alias": "high_school_computer_science",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_computer_science",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school computer science.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_european_history": {
+      "task": "mmlu_high_school_european_history",
+      "task_alias": "high_school_european_history",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_european_history",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school european history.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_geography": {
+      "task": "mmlu_high_school_geography",
+      "task_alias": "high_school_geography",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_geography",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school geography.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_government_and_politics": {
+      "task": "mmlu_high_school_government_and_politics",
+      "task_alias": "high_school_government_and_politics",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_government_and_politics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school government and politics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_macroeconomics": {
+      "task": "mmlu_high_school_macroeconomics",
+      "task_alias": "high_school_macroeconomics",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_macroeconomics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school macroeconomics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_mathematics": {
+      "task": "mmlu_high_school_mathematics",
+      "task_alias": "high_school_mathematics",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_mathematics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school mathematics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_microeconomics": {
+      "task": "mmlu_high_school_microeconomics",
+      "task_alias": "high_school_microeconomics",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_microeconomics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school microeconomics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_physics": {
+      "task": "mmlu_high_school_physics",
+      "task_alias": "high_school_physics",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_physics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school physics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_psychology": {
+      "task": "mmlu_high_school_psychology",
+      "task_alias": "high_school_psychology",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_psychology",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school psychology.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_statistics": {
+      "task": "mmlu_high_school_statistics",
+      "task_alias": "high_school_statistics",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_statistics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school statistics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_us_history": {
+      "task": "mmlu_high_school_us_history",
+      "task_alias": "high_school_us_history",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_us_history",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school us history.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_high_school_world_history": {
+      "task": "mmlu_high_school_world_history",
+      "task_alias": "high_school_world_history",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "high_school_world_history",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about high school world history.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_human_aging": {
+      "task": "mmlu_human_aging",
+      "task_alias": "human_aging",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "human_aging",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about human aging.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_human_sexuality": {
+      "task": "mmlu_human_sexuality",
+      "task_alias": "human_sexuality",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "human_sexuality",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about human sexuality.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_international_law": {
+      "task": "mmlu_international_law",
+      "task_alias": "international_law",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "international_law",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about international law.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_jurisprudence": {
+      "task": "mmlu_jurisprudence",
+      "task_alias": "jurisprudence",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "jurisprudence",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about jurisprudence.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_logical_fallacies": {
+      "task": "mmlu_logical_fallacies",
+      "task_alias": "logical_fallacies",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "logical_fallacies",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about logical fallacies.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_machine_learning": {
+      "task": "mmlu_machine_learning",
+      "task_alias": "machine_learning",
+      "tag": "mmlu_stem_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "machine_learning",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about machine learning.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_management": {
+      "task": "mmlu_management",
+      "task_alias": "management",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "management",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about management.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_marketing": {
+      "task": "mmlu_marketing",
+      "task_alias": "marketing",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "marketing",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about marketing.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_medical_genetics": {
+      "task": "mmlu_medical_genetics",
+      "task_alias": "medical_genetics",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "medical_genetics",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about medical genetics.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_miscellaneous": {
+      "task": "mmlu_miscellaneous",
+      "task_alias": "miscellaneous",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "miscellaneous",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about miscellaneous.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_moral_disputes": {
+      "task": "mmlu_moral_disputes",
+      "task_alias": "moral_disputes",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "moral_disputes",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about moral disputes.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_moral_scenarios": {
+      "task": "mmlu_moral_scenarios",
+      "task_alias": "moral_scenarios",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "moral_scenarios",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about moral scenarios.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_nutrition": {
+      "task": "mmlu_nutrition",
+      "task_alias": "nutrition",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "nutrition",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about nutrition.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_philosophy": {
+      "task": "mmlu_philosophy",
+      "task_alias": "philosophy",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "philosophy",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about philosophy.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_prehistory": {
+      "task": "mmlu_prehistory",
+      "task_alias": "prehistory",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "prehistory",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about prehistory.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_professional_accounting": {
+      "task": "mmlu_professional_accounting",
+      "task_alias": "professional_accounting",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "professional_accounting",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about professional accounting.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_professional_law": {
+      "task": "mmlu_professional_law",
+      "task_alias": "professional_law",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "professional_law",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about professional law.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_professional_medicine": {
+      "task": "mmlu_professional_medicine",
+      "task_alias": "professional_medicine",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "professional_medicine",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about professional medicine.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_professional_psychology": {
+      "task": "mmlu_professional_psychology",
+      "task_alias": "professional_psychology",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "professional_psychology",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about professional psychology.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_public_relations": {
+      "task": "mmlu_public_relations",
+      "task_alias": "public_relations",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "public_relations",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about public relations.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_security_studies": {
+      "task": "mmlu_security_studies",
+      "task_alias": "security_studies",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "security_studies",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about security studies.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_sociology": {
+      "task": "mmlu_sociology",
+      "task_alias": "sociology",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "sociology",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about sociology.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_us_foreign_policy": {
+      "task": "mmlu_us_foreign_policy",
+      "task_alias": "us_foreign_policy",
+      "tag": "mmlu_social_sciences_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "us_foreign_policy",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about us foreign policy.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_virology": {
+      "task": "mmlu_virology",
+      "task_alias": "virology",
+      "tag": "mmlu_other_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "virology",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about virology.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "mmlu_world_religions": {
+      "task": "mmlu_world_religions",
+      "task_alias": "world_religions",
+      "tag": "mmlu_humanities_tasks",
+      "dataset_path": "hails/mmlu_no_train",
+      "dataset_name": "world_religions",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "test_split": "test",
+      "fewshot_split": "dev",
+      "doc_to_text": "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The following are multiple choice questions (with answers) about world religions.\n\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "tag": [
+        "multiple_choice"
+      ],
+      "dataset_path": "hellaswag",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{label}}",
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 10,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0
+      }
+    }
+  },
+  "task_spec": {
+    "gsm8k": {
+      "limit": null,
+      "num_fewshot": 8
+    },
+    "hendrycks_math": {
+      "limit": 500,
+      "num_fewshot": 4
+    },
+    "mmlu": {
+      "limit": 500,
+      "num_fewshot": 5
+    },
+    "hellaswag": {
+      "limit": 500,
+      "num_fewshot": 10
+    }
+  }
+}
