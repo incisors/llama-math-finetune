@@ -1,0 +1,5 @@
+# Shell scripts must use LF — Windows CRLF breaks `#!/usr/bin/env bash` on Linux pods.
+*.sh text eol=lf
+
+# Default: let git auto-handle line endings.
+* text=auto

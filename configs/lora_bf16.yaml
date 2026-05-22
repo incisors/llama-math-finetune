@@ -1,0 +1,42 @@
+# LoRA bf16 — frozen bf16 base + LoRA adapters
+# Hardware: 1× A100 80GB PCIe (RunPod)
+# Expected VRAM: ~30 GB
+# Expected wall time: 4-5h for 50K samples, 1 epoch
+
+method: lora
+
+model:
+  name: meta-llama/Llama-3.1-8B
+
+data:
+  dataset_name: meta-math/MetaMathQA
+  subset_size: 50000
+  seed: 42
+  max_seq_length: 1024
+
+training:
+  num_train_epochs: 1
+  effective_batch_size: 16
+  per_device_train_batch_size: 8
+  gradient_accumulation_steps: 2
+  gradient_checkpointing: false
+  optim: adamw_torch
+  warmup_ratio: 0.03
+  lr_scheduler_type: cosine
+  bf16: true
+  seed: 42
+  learning_rate: 2.0e-4
+  logging_steps: 10
+  save_steps: 500
+  save_total_limit: 2
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+output:
+  checkpoint_dir: ./checkpoints/lora-r16
+  wandb_project: llama-math-finetune
+  wandb_run_name: lora-r16

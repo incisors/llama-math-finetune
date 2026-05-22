@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# venv
+.venv/
+venv/
+
+# Project artifacts (per CLAUDE.md)
+checkpoints/
+eval_results/
+
+# Regenerable from prepare_data.py with seed=42 — no need to ship 36MB
+data/
+
+# Claude Code local IDE settings (not portable)
+.claude/
+
+# Project context docs — kept locally, not pushed to GitHub
+CLAUDE.md
+CLAUDE_phase0.md
+
+# W&B local cache
+wandb/
+
+# HuggingFace cache (if accidentally created here)
+hf_cache/
+
+# Logs / misc
+*.log
+.env
+.DS_Store
+Thumbs.db

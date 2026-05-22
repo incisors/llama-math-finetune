@@ -1,0 +1,48 @@
+# QLoRA — 4-bit NF4 quantized base + LoRA adapters
+# Hardware: 1× A100 80GB PCIe (RunPod) — same as LoRA bf16, for methodology consistency
+# Expected VRAM: ~13 GB (well below 80GB; we use A100 to keep hardware constant across methods)
+# Expected wall time: 2-3h for 50K samples, 1 epoch
+
+method: qlora
+
+model:
+  name: meta-llama/Llama-3.1-8B
+
+data:
+  dataset_name: meta-math/MetaMathQA
+  subset_size: 50000
+  seed: 42
+  max_seq_length: 1024
+
+training:
+  num_train_epochs: 1
+  effective_batch_size: 16            # documents intent; train.py validates
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  gradient_checkpointing: true
+  optim: adamw_torch
+  warmup_ratio: 0.03
+  lr_scheduler_type: cosine
+  bf16: true
+  seed: 42
+  learning_rate: 2.0e-4
+  logging_steps: 10
+  save_steps: 500
+  save_total_limit: 2
+
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_compute_dtype: bfloat16
+  bnb_4bit_use_double_quant: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+output:
+  checkpoint_dir: ./checkpoints/qlora-r16
+  wandb_project: llama-math-finetune
+  wandb_run_name: qlora-r16
