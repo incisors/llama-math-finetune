@@ -11,7 +11,7 @@ venv/
 
 # Project artifacts (per CLAUDE.md)
 checkpoints/
-eval_results/
+# eval_results/ now committed
 
 # Regenerable from prepare_data.py with seed=42 — no need to ship 36MB
 data/
