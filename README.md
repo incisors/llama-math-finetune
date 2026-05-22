@@ -2,7 +2,7 @@
 
 Empirical comparison of three fine-tuning methods on **Llama-3.1-8B** for math reasoning, under identical hardware, data, and token budget. The interesting axis is the trade-off between **math gain** (GSM8K, MATH) and **catastrophic forgetting** of general knowledge (MMLU, HellaSwag).
 
-**Status**: baseline evaluated; QLoRA / LoRA / Full FT runs upcoming.
+**Status**: baseline + QLoRA done; LoRA bf16 / Full FT runs upcoming.
 
 ## Results
 
@@ -11,7 +11,7 @@ All scores are accuracy (%). Baseline is raw Llama-3.1-8B without fine-tuning. �
 | Method      | GSM8K | MATH | MMLU | HellaSwag | Δ GSM8K | Δ MMLU | Peak VRAM | Train time | Cost |
 |-------------|------:|-----:|-----:|----------:|--------:|-------:|----------:|-----------:|-----:|
 | Baseline    |  48.9 | 13.4 | 66.8 |      73.2 |       — |      — |         — |          — |    — |
-| QLoRA r=16  |     — |    — |    — |         — |       — |      — |         — |          — |    — |
+| QLoRA r=16  |  68.2 | 14.3 | 65.9 |      69.6 |   +19.3 |   -0.9 |    ~13 GB |       ~3 h |  ~$5 |
 | LoRA r=16   |     — |    — |    — |         — |       — |      — |         — |          — |    — |
 | Full FT     |     — |    — |    — |         — |       — |      — |         — |          — |    — |
 
