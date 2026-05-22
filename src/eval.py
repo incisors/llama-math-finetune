@@ -40,7 +40,10 @@ def main() -> None:
                    help="Adapter dir (peft mode) or merged model dir (full_ft mode)")
     p.add_argument("--output-dir", required=True)
     p.add_argument("--tasks", nargs="+", default=list(TASK_SPEC.keys()))
-    p.add_argument("--batch-size", default="16")
+    p.add_argument("--batch-size", default="auto",
+                   help="Batch size; 'auto' probes the largest fit per task — "
+                        "recommended because loglikelihood tasks (MMLU/HellaSwag) "
+                        "need much smaller batches than generate_until (GSM8K/MATH).")
     args = p.parse_args()
 
     # Build the HFLM wrapper once and reuse across all tasks.
@@ -62,6 +65,7 @@ def main() -> None:
 
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / "results.json"
 
     merged: dict[str, dict] = {"results": {}, "configs": {}, "task_spec": {}}
 
@@ -80,10 +84,12 @@ def main() -> None:
         if "configs" in r:
             merged["configs"].update(r["configs"])
 
-    out_path = out_dir / "results.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(merged, f, indent=2, default=str)
-    print(f"\nSaved aggregated results to {out_path}")
+        # Save after each task so a later crash doesn't wipe earlier results.
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(merged, f, indent=2, default=str)
+        print(f"  Partial results saved → {out_path}")
+
+    print(f"\nAll done. Aggregated results at {out_path}")
 
     # Print quick summary
     print("\n=== Summary ===")
