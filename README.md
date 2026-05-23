@@ -2,25 +2,50 @@
 
 Empirical comparison of three fine-tuning methods on **Llama-3.1-8B** for math reasoning, under identical hardware, data, and token budget. The interesting axis is the trade-off between **math gain** (GSM8K, MATH) and **catastrophic forgetting** of general knowledge (MMLU, HellaSwag).
 
-**Status**: baseline + QLoRA done; LoRA bf16 / Full FT runs upcoming.
+**Status**: baseline + QLoRA + LoRA bf16 done; Full FT upcoming.
 
 ## Results
 
-All scores are accuracy (%). Baseline is raw Llama-3.1-8B without fine-tuning. Δ columns will fill in as each phase completes.
+Baseline is raw Llama-3.1-8B without fine-tuning. Δ columns are vs baseline. Full FT row fills in once Phase 4 completes.
 
-| Method      | GSM8K | MATH | MMLU | HellaSwag | Δ GSM8K | Δ MMLU | Peak VRAM | Train time | Cost |
-|-------------|------:|-----:|-----:|----------:|--------:|-------:|----------:|-----------:|-----:|
-| Baseline    |  48.9 | 13.4 | 66.8 |      73.2 |       — |      — |         — |          — |    — |
-| QLoRA r=16  |  68.2 | 14.3 | 65.9 |      69.6 |   +19.3 |   -0.9 |    ~13 GB |       ~3 h |  ~$5 |
-| LoRA r=16   |     — |    — |    — |         — |       — |      — |         — |          — |    — |
-| Full FT     |     — |    — |    — |         — |       — |      — |         — |          — |    — |
+### Quality benchmarks (accuracy %)
 
-Raw lm-eval-harness output for each phase lives in [`eval_results/`](eval_results/). Headline metrics used in the table:
+| Method      | GSM8K | MATH | MMLU | HellaSwag | Δ GSM8K | Δ MMLU |
+|-------------|------:|-----:|-----:|----------:|--------:|-------:|
+| Baseline    |  48.9 | 13.4 | 66.8 |      73.2 |       — |      — |
+| QLoRA r=16  |  68.2 | 14.3 | 65.9 |      69.6 |   +19.3 |   -0.9 |
+| LoRA r=16   |  68.7 | 14.1 | 66.0 |      69.8 |   +19.8 |   -0.8 |
+| Full FT     |     — |    — |    — |         — |       — |      — |
+
+Numbers are pulled directly from [`eval_results/`](eval_results/) (lm-eval-harness JSON output). Metrics used:
 
 - **GSM8K**: `exact_match,flexible-extract`, full 1319-item set, 8-shot
 - **MATH** (`hendrycks_math`): `exact_match`, 500-item subset, 4-shot
 - **MMLU**: `acc`, 500-item subset, 5-shot
 - **HellaSwag**: `acc_norm`, 500-item subset, 10-shot
+
+### System efficiency
+
+Measured via W&B run summary + system-metric time series. Extraction script: [`src/extract_wandb_metrics.py`](src/extract_wandb_metrics.py). Raw output: [`results/system_metrics.json`](results/system_metrics.json).
+
+| Method      | Peak GPU mem | Train time | Throughput     | Avg GPU util | Avg power | Final loss | total FLOPs | Cost  |
+|-------------|-------------:|-----------:|---------------:|-------------:|----------:|-----------:|------------:|------:|
+| QLoRA r=16  |     35.5 GB  |    3.09 h  | 4.50 samples/s |       97.4 % |   380 W   |     0.376  |    7.77e17  | $4.63 |
+| LoRA r=16   |     64.8 GB  |    1.43 h  | 9.72 samples/s |       94.3 % |   380 W   |     0.374  |    7.77e17  | $2.14 |
+| Full FT     |          —   |        —   |             —  |          —   |       —   |         —  |         —   |    —  |
+
+All methods share `effective_batch_size = 16` on the identical 50K seed=42 subset → identical `total_flos` confirms apples-to-apples comparison at the compute level.
+
+**Key system trade-offs (QLoRA vs LoRA bf16)**:
+
+- **Quality**: indistinguishable. Final train loss differs by 0.7%; all 4 downstream eval scores within 1 σ stderr (e.g. GSM8K diff 0.46 pts vs stderr 1.28 pts).
+- **Memory**: QLoRA uses **1.83× less peak GPU memory** (35.5 GB vs 64.8 GB). Note both are far above the static weight footprint — dequantized activations + LoRA-bf16 activations dominate.
+- **Time**: QLoRA is **2.16× slower** wall-clock (3.09 h vs 1.43 h) for the same total FLOPs. Cost: also 2.16×. The slowdown is purely the per-forward NF4 dequant tax — both methods saturate the GPU (>94 % util, 380 W).
+- **Energy**: identical avg power × 2.16× longer runtime → QLoRA consumes ~2.16× more energy per run despite fitting on smaller hardware.
+
+**When to pick which** (single-GPU regime): if you have ≥80 GB VRAM, LoRA bf16 is strictly better — faster, cheaper, identical quality. QLoRA wins only when memory is the hard constraint (e.g. on a 24 GB consumer GPU, where bf16 base + gradients + activations would OOM but the 4-bit weights fit).
+
+Caveat: LoRA bf16 here uses `gradient_checkpointing=false` (PEFT-frozen base + checkpointing breaks the grad chain unless `enable_input_require_grads()` is called); QLoRA uses `gradient_checkpointing=true` (handled automatically by `prepare_model_for_kbit_training`). A fully apples-to-apples memory comparison would require fixing the LoRA bf16 code path to also support checkpointing.
 
 ## What's being compared
 
