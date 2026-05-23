@@ -34,8 +34,8 @@ training:
   seed: 42
   learning_rate: 2.0e-5            # 10× lower than LoRA
   logging_steps: 10
-  save_steps: 1000
-  save_total_limit: 1              # 16 GB checkpoint each — keep only 1
+  save_steps: 999999               # disable mid-training saves (FSDP sharded checkpoints are ~80GB each, blow the volume)
+  save_total_limit: 1              # only the final save_model() at the end matters anyway
 
 distributed:
   framework: fsdp
