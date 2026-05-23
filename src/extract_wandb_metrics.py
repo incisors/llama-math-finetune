@@ -52,7 +52,20 @@ def extract_run(api, run_name: str) -> dict | None:
     if not runs:
         print(f"  WARNING: no run named {run_name!r}")
         return None
-    run = runs[0]
+    # A name can map to multiple runs (after retries). Prefer the newest finished one.
+    finished = sorted(
+        (r for r in runs if r.state == "finished"),
+        key=lambda r: r.created_at,
+        reverse=True,
+    )
+    if finished:
+        run = finished[0]
+        if len(runs) > 1:
+            print(f"  {len(runs)} runs share this name; picked newest finished: id={run.id}")
+    else:
+        runs.sort(key=lambda r: r.created_at, reverse=True)
+        run = runs[0]
+        print(f"  WARNING: no finished runs for {run_name!r}; using newest (state={run.state})")
     print(f"  id={run.id}, state={run.state}, created={run.created_at}")
 
     summary = dict(run.summary)
