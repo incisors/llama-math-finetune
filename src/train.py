@@ -73,6 +73,13 @@ def build_model_and_tokenizer(cfg: dict):
     else:
         raise ValueError(f"Unknown method: {method!r}")
 
+    # Disable KV cache for training — it's only useful at inference time. Required
+    # when FSDP activation_checkpointing is on (otherwise the backward recompute
+    # sees a stale cache and the attention K/V dims become 2× the query dims).
+    # Transformers Trainer auto-sets this when gradient_checkpointing=True, but we
+    # rely on FSDP's own checkpointing, so we set it explicitly here.
+    model.config.use_cache = False
+
     return model, tokenizer
 
 
