@@ -1,12 +1,13 @@
-# Full Fine-tuning — all 8B params trainable, FSDP across 2 GPUs
-# Hardware: 2× A100 80GB SXM (RunPod, NVLink required)
-# Expected VRAM: ~70 GB per GPU
-# Expected wall time: 10-12h for 50K samples, 1 epoch
+# Full Fine-tuning — all 8B params trainable, FSDP across 4 GPUs
+# Hardware: 4× A100 80GB SXM (RunPod, NVLink required)
+# Expected VRAM: ~42 GB per GPU (safe margin vs 80 GB)
+# Expected wall time: 6-8h for 50K samples, 1 epoch
 #
 # IMPORTANT:
 #   - Launch with: accelerate launch --config_file configs/accelerate_fsdp.yaml src/train.py --config configs/full_ft_fsdp.yaml
 #   - learning_rate is 10× LOWER than LoRA — Full FT is sensitive
-#   - effective batch = per_device(2) × grad_accum(4) × num_gpus(2) = 16
+#   - effective batch = per_device(2) × grad_accum(2) × num_gpus(4) = 16
+#   - If OOM occurs on 4 GPUs: switch to per_device=1, grad_accum=4 (same effective batch, ~5 GB less per-GPU activation memory)
 
 method: full_ft
 
@@ -23,8 +24,8 @@ training:
   num_train_epochs: 1
   effective_batch_size: 16
   per_device_train_batch_size: 2
-  gradient_accumulation_steps: 4
-  gradient_checkpointing: true
+  gradient_accumulation_steps: 2          # 2 × 2 × 4 GPUs = 16 effective
+  gradient_checkpointing: true            # critical: keeps activations bounded
   optim: adamw_torch
   warmup_ratio: 0.03
   lr_scheduler_type: cosine
@@ -39,7 +40,7 @@ distributed:
   framework: fsdp
   sharding_strategy: FULL_SHARD
   mixed_precision: bf16
-  num_processes: 2
+  num_processes: 4
 
 output:
   checkpoint_dir: ./checkpoints/full-ft
