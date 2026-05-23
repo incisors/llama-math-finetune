@@ -9,10 +9,12 @@ if [ ! -d ./data/metamathqa_50k_seed42 ]; then
     python -m src.prepare_data
 fi
 
-# 2. Train via accelerate (FSDP shards across 2 GPUs)
+# 2. Train via accelerate (FSDP shards across 4 GPUs)
+# Use --module so relative imports in src/train.py work
+# (accelerate launch src/train.py treats it as a plain script, breaking `from .utils import`).
 accelerate launch \
     --config_file configs/accelerate_fsdp.yaml \
-    src/train.py \
+    --module src.train \
     --config configs/full_ft_fsdp.yaml
 
 # 3. Eval the merged checkpoint
