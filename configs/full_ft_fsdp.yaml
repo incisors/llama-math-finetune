@@ -25,7 +25,8 @@ training:
   effective_batch_size: 16
   per_device_train_batch_size: 2
   gradient_accumulation_steps: 2          # 2 × 2 × 4 GPUs = 16 effective
-  gradient_checkpointing: true            # critical: keeps activations bounded
+  gradient_checkpointing: false           # disabled because FSDP's fsdp_activation_checkpointing handles it
+                                          # (transformers refuses to have both enabled)
   optim: adamw_torch
   warmup_ratio: 0.03
   lr_scheduler_type: cosine
