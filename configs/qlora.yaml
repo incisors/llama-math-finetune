@@ -1,5 +1,5 @@
 # QLoRA — 4-bit NF4 quantized base + LoRA adapters
-# Hardware: 1× A100 80GB PCIe (RunPod) — same as LoRA bf16, for methodology consistency
+# Hardware: 1× A100 80GB SXM (RunPod) — same as LoRA bf16, for methodology consistency
 # Expected VRAM: ~13 GB (well below 80GB; we use A100 to keep hardware constant across methods)
 # Expected wall time: 2-3h for 50K samples, 1 epoch
 

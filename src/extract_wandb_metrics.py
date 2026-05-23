@@ -111,12 +111,19 @@ def extract_run(api, run_name: str) -> dict | None:
         print(f"  history(stream=events) failed: {e}")
 
     runtime_s = float(summary.get("train_runtime") or 0)
+    # train.py logs num_gpus into wandb.config (via init_wandb's extra_config).
+    # config != summary, so look there. Fall back to 1 if not present.
+    num_gpus = int(dict(run.config).get("num_gpus") or 1)
+
+    # RunPod A100 80GB SXM ≈ $1.80/h/GPU (rough, varies by region/cloud type).
+    sxm_rate_per_gpu_h = 1.80
 
     return {
         "run_id": run.id,
         "name": run.name,
         "state": run.state,
         "created_at": str(run.created_at),
+        "num_gpus": num_gpus,
         "runtime_s": runtime_s,
         "runtime_h": runtime_s / 3600 if runtime_s else None,
         "train_samples_per_sec": summary.get("train_samples_per_second"),
@@ -129,13 +136,14 @@ def extract_run(api, run_name: str) -> dict | None:
         "avg_gpu_util_pct": avg_util,
         "avg_power_w": avg_power,
         "max_temp_c": max_temp,
-        "cost_usd_at_1_5_per_hr": (runtime_s / 3600) * 1.5 if runtime_s else None,
+        "cost_usd_sxm": (runtime_s / 3600) * num_gpus * sxm_rate_per_gpu_h if runtime_s else None,
         "system_columns_available": sys_cols_found,
     }
 
 
 def print_comparison(metrics: dict, runs: list[str]) -> None:
     rows = [
+        ("num_gpus",               "# GPUs"),
         ("runtime_h",              "Runtime (h)"),
         ("peak_gpu_mem_gb",        "Peak GPU mem (GB)"),
         ("train_samples_per_sec",  "Throughput (samples/s)"),
@@ -146,7 +154,7 @@ def print_comparison(metrics: dict, runs: list[str]) -> None:
         ("final_loss",             "Final train loss"),
         ("avg_loss",               "Avg train loss"),
         ("total_flos",             "Total FLOPs"),
-        ("cost_usd_at_1_5_per_hr", "Cost @$1.50/h ($)"),
+        ("cost_usd_sxm",           "Cost (SXM, $1.80/GPU/h)"),
     ]
     width_label = 25
     width_col = 18
@@ -175,7 +183,7 @@ def print_comparison(metrics: dict, runs: list[str]) -> None:
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--runs", nargs="+", default=["qlora-r16", "lora-r16"])
+    p.add_argument("--runs", nargs="+", default=["qlora-r16", "lora-r16", "full-ft"])
     p.add_argument("--output", default="results/system_metrics.json")
     args = p.parse_args()
 

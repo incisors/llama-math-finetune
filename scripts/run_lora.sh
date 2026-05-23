@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# LoRA bf16 training + eval. Hardware: 1× A100 80GB PCIe (RunPod).
+# LoRA bf16 training + eval. Hardware: 1× A100 80GB SXM (RunPod).
 # Assumes venv is activated and setup.sh has been run on the pod.
 
 set -euo pipefail

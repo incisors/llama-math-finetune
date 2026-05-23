@@ -1,5 +1,5 @@
 # LoRA bf16 — frozen bf16 base + LoRA adapters
-# Hardware: 1× A100 80GB PCIe (RunPod)
+# Hardware: 1× A100 80GB SXM (RunPod)
 # Expected VRAM: ~30 GB
 # Expected wall time: 4-5h for 50K samples, 1 epoch
 

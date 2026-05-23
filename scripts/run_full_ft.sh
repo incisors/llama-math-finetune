@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Full FT training + eval. Hardware: 2× A100 80GB SXM (RunPod, NVLink required).
+# Full FT training + eval. Hardware: 4× A100 80GB SXM (RunPod, NVLink required).
 # Assumes venv is activated and setup.sh has been run.
 
 set -euo pipefail

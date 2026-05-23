@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# QLoRA training + eval. Hardware: RTX 4080 16GB (local, overnight).
+# QLoRA training + eval. Hardware: 1× A100 80GB SXM (RunPod).
 # Assumes venv is activated.
 
 set -euo pipefail
